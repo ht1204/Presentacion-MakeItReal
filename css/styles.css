@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital@1&display=swap');
+
+*   {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+
+    min-height: 100%;
+    background: url('../img/Cartagena-Bocagrande.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper .intro{
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+
+.wrapper .intro #photo img{
+    border: 12px solid white;
+    border-radius: 50%;
+    width: 75%;
+}
+
+
+.wrapper .intro #photo{
+    margin-bottom: 3rem;
+}
+
+.wrapper .intro .presentation .name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    color:white;
+    text-shadow: 4px 2px rgb(37, 22, 22);
+}
+
+.wrapper .intro .presentation .city{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: 2rem;
+    color:rgb(112, 225, 233);
+    text-shadow: 3px 5px black;
+}
+
+@media only screen and (max-width: 575.98px) { 
+
+    .wrapper .intro #photo img{
+        width: 100%;
+    }
+
+    .wrapper .intro .presentation .city{
+        font-size: 97%;
+        text-shadow: 2px 5px black;
+    }
+
+}
